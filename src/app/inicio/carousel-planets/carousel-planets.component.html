@@ -1,4 +1,3 @@
-
 <ngb-carousel   class="body-carousel">
   <ng-template ngbSlide *ngFor="let image of images">
     <div class="carousel-wrapper">
@@ -7,7 +6,7 @@
         <div class="center-div column float-name">
           <h2>{{image.who}}</h2>
           <h1>{{image.info}}</h1>
-          <button class="button-global">
+          <button class="button-global" routerLink="/infoPlanets">
             Read more
           </button>
         </div> 
@@ -15,4 +14,3 @@
     </div>
   </ng-template>
 </ngb-carousel>
-

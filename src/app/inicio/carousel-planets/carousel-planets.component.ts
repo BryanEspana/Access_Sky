@@ -9,7 +9,7 @@ export class CarouselPlanetsComponent{
 
   images = [
     {name: 'assets/tierra.png', who: 'Planet', info: 'Earth' },
-    {name: 'assets/lunaaa.png', who: 'Satelite', info: 'Moon' },
+    {name: 'assets/luna.png', who: 'Satelite', info: 'Moon' },
     {name: 'assets/marte.png', who: 'Planet', info: 'Mars' },
   ];
  

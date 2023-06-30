@@ -9,7 +9,6 @@ header{
     position: fixed;
     z-index: 1000000;
     width: 100%;
-    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -32,6 +31,3 @@ label{
     width: 180px;
 }
 
-.body-component{
-    width: 100%;
-}

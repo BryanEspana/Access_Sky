@@ -8,11 +8,13 @@ import { CarouselPlanetsComponent } from './inicio/carousel-planets/carousel-pla
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InfoPlanetsComponent } from './inicio/info-planets/info-planets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarouselPlanetsComponent,
+    InfoPlanetsComponent,
   ],
   imports: [
     BrowserModule,

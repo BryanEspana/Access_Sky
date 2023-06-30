@@ -92,3 +92,14 @@ h1{
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+.body-component{
+  width: 100%;
+  background-image: url('/assets/fondo.png') !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.conteiner-info{
+
+}
