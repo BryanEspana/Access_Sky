@@ -37,3 +37,58 @@ $Access_Sky-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.center-div{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  color: white;
+  font-weight: 300;
+  font-size: 120px;
+  padding: 0rem;
+  margin: 0rem;
+}
+.padT{
+  padding-top: 1rem;
+}
+.padT2{
+  padding-top: 2rem;
+}
+.padT4{
+  padding-top: 4rem;
+}
+.padT6{
+  padding-top: 6rem;
+}
+
+//------------------BOTONES------------------//
+.button-global{
+  border-radius: 3rem;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 2rem !important;
+  border: 1px solid white;
+  background-color: #000000cb;
+  color: white;
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button-global:hover{
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 600;
+}
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

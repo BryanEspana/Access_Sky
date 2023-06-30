@@ -1,15 +1,18 @@
 
-<div class="carousel-container">
-    <div class="carousel">
-      <div class="carousel-slide">
-        <img src="assets\tierra.png" alt="Image 1" class="img-carousel">
-      </div>
-      <div class="carousel-slide">
-        <img src="image2.jpg" alt="Image 2">
-      </div>
-      <div class="carousel-slide">
-        <img src="image3.jpg" alt="Image 3">
+<ngb-carousel   class="body-carousel">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="carousel-wrapper">
+      <img src="{{image.name}}" alt="image.who" class="img-carousel">
+      <div class="info-planets">
+        <div class="center-div column float-name">
+          <h2>{{image.who}}</h2>
+          <h1>{{image.info}}</h1>
+          <button class="button-global">
+            Read more
+          </button>
+        </div> 
       </div>
     </div>
-  </div>
-        
+  </ng-template>
+</ngb-carousel>
+

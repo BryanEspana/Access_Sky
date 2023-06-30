@@ -1,90 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
-
-//colors
-$white: #ffffff;
-$black: #000000;
-
-* {
-    box-sizing: inherit;
-    transition-property: all;
-    transition-duration: .6s;
-    transition-timing-function: ease;
-  }
-  
-  a {
-    background: rgba($black, 0);
-    border-bottom: 1px solid;
-    color: $black;
-    line-height: 1.4;
-    padding: .25em;
-    text-decoration: none;
-    
-    &:hover {
-      background: rgba($black, 1);
-      color: $white;
-    }
-  }
-
-.btn {
-  color: #000000;
-  cursor: pointer;
-  font-size:16px;
-  font-weight: 500;
-  line-height: 45px;
-  margin: 0 0 2em;
-  border-radius: 1rem;
-  max-width: 160px; 
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%; 
-  
-  @media(min-width: 600px) {
-      
-    margin: 0 1em 2em;
-  
-  }
-  
-  &:hover { text-decoration: none; }
-  
-}
-
-.btn-1 {
-  background: darken($white, 1.5%);
-  font-weight: 500;
-
-  svg {
-    height: 54px;
-    left: 0;
-    position: absolute;
-    top: 0; 
-    width: 100%; 
-
-  }
-  
-
-}
-
-.btn-1:hover {
-  background: rgba($white, 0);
-  font-weight: 900;
-  letter-spacing: 1px;
-  
-  rect {
-    stroke-width: 5;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-  }
-}
-
-
 
 html, body{
     background-color: black;
+    //overflow: hidden !important;
+
 }
 
 header{
+    position: fixed;
+    z-index: 1000000;
+    width: 100%;
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -98,19 +23,15 @@ label{
     color: white;
     font-size: 20px;
     padding: 0% 7.5%;
-    cursor: pointer;
 }
 
-button{
-    cursor: pointer;
-    padding: 20px 30px;
-    border-radius: 2rem;
-    border: none;
-    background-color: #444444;
-    color: white;
-}
+
 
 .logo{
     padding: 25px;
     width: 180px;
+}
+
+.body-component{
+    width: 100%;
 }
